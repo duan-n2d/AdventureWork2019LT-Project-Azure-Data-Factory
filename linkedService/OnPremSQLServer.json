@@ -1,0 +1,28 @@
+{
+	"name": "OnPremSQLServer",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "localhost",
+			"database": "AdventureWorksLT2019",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "n2d",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVaultN2DLocalhost",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "password"
+			}
+		},
+		"connectVia": {
+			"referenceName": "SHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

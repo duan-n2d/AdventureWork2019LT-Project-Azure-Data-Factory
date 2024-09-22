@@ -1,0 +1,9 @@
+{
+	"name": "ADF-Demo-n2d",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e9ebad52-701c-4283-afd3-8c1eda37f2cd",
+		"tenantId": "07acb355-56bc-489b-b98c-8fea440460e8"
+	}
+}
