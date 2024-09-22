@@ -17,7 +17,7 @@ This project demonstrates an ETL pipeline for processing data from a local SQL S
 - **Delta Lake**: Stores data in a scalable format, with versioning and ACID transactions.
 
 ### Data Sources:
-- **AdventureWorksLT2019**: A lightweight business database for a fictitious company.
+- [**AdventureWorksLT2019**: A lightweight business database for a fictitious company.](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms)
 
 ---
 
@@ -39,23 +39,6 @@ This project demonstrates an ETL pipeline for processing data from a local SQL S
 
 ### 4. Daily Data Refresh
 - The pipeline is triggered every day at 00:00 (midnight) to refresh the data.
-
----
-
-## File Structure
-
-```plaintext
-├── README.md
-├── azure-pipelines
-│   └── adf-pipeline.json        # ADF pipeline JSON definition
-├── notebooks
-│   ├── default_to_silver.py     # Notebook script for Bronze to Silver transformation
-│   └── silver_to_gold.py        # Notebook script for Silver to Gold transformation
-├── data
-│   └── adventureworks2019lt      # Sample dataset
-└── docs
-    └── architecture_diagram.png  # Architecture diagram for the project
-```
 
 ## How to Run the Project
 Clone the repository:
